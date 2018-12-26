@@ -6,6 +6,7 @@
         android:layout_height="130dp"
         android:background="@drawable/item_background"
         android:gravity="center"
+        android:layout_margin="10dp"
         android:textColor="#122256"
         android:textSize="10sp"
         android:textStyle="bold" />

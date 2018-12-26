@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.lewis.tangramdemo.lesson1.L1Activity;
+import com.lewis.tangramdemo.lesson1_click.L1Activity_click;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -29,11 +30,14 @@ public class MainActivity extends AppCompatActivity {
             unbinder.unbind();
     }
 
-    @OnClick({R.id.btn_l1})
+    @OnClick({R.id.btn_l1, R.id.btn_l1_click})
     public void onButtonClick(View view) {
         switch (view.getId()) {
             case R.id.btn_l1:
                 startActivity(L1Activity.class);
+                break;
+            case R.id.btn_l1_click:
+                startActivity(L1Activity_click.class);
                 break;
             default:
                 ;

@@ -12,4 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="简单使用"/>
+    <Button
+        android:id="@+id/btn_l1_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击支持"/>
 </LinearLayout>

@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".lesson1.L1Activity"/>
+        <activity android:name=".lesson1_click.L1Activity_click"/>
     </application>
 
 </manifest>

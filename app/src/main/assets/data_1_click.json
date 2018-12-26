@@ -1,0 +1,26 @@
+[
+  {
+    "type": "TestView1_click",
+    "msg": "点我，点我"
+  },
+  {
+    "type": "container-twoColumn",
+    "style":{
+      "bgColor":"#008577"
+    },
+    "items": [
+      {
+        "type": "TestView1_click",
+        "msg": "点一下父控件墨绿色地方"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "会发现事件传递过去了"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "因为是两列的父控件嘛"
+      }
+    ]
+  }
+]
