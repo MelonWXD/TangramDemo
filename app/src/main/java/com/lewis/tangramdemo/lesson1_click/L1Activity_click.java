@@ -23,7 +23,6 @@ public class L1Activity_click extends L1Activity {
     public void doBuilderRegister(TangramBuilder.InnerBuilder builder) {
         super.doBuilderRegister(builder);
         builder.registerCell(TYPE_TEST_VIEW_1_CLICK, TestView1_click.class);
-
     }
 
     @Override

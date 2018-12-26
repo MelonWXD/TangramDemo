@@ -1,0 +1,30 @@
+[
+  {
+    "type": "TestView1_scroll",
+    "msg": "往下滑，往下滑啊"
+  },
+  {
+    "type": "container-oneColumn",
+    "style": {
+      "bgColor": "#448577"
+    },
+    "items": [
+      {
+        "type": "TestView1_click",
+        "msg": "占"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "位"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "置"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "的"
+      }
+    ]
+  }
+]

@@ -27,6 +27,7 @@ public abstract class CommonActivity extends AppCompatActivity {
         setContentView(R.layout.activity_common);
         recyclerView = findViewById(R.id.rv_main);
 
+        initView();
         //初始化 TangramBuilder
         builder = TangramBuilder.newInnerBuilder(this);
         doBuilderRegister(builder);
@@ -49,6 +50,16 @@ public abstract class CommonActivity extends AppCompatActivity {
 
     }
 
+    public void initView() {
+    }
+
+    public RecyclerView getRecyclerView(){
+        return recyclerView;
+    }
+
+    public TangramEngine getEngine() {
+        return engine;
+    }
 
     public abstract void doBuilderRegister(TangramBuilder.InnerBuilder builder);
 

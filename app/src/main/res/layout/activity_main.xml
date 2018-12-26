@@ -17,4 +17,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="点击支持"/>
+    <Button
+        android:id="@+id/btn_l1_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="滑动支持"/>
 </LinearLayout>
