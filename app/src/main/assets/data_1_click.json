@@ -1,7 +1,7 @@
 [
   {
-    "type": "TestView1_click",
-    "msg": "点我，点我"
+    "type": "TestView1",
+    "msg": "别点我，点下面仨"
   },
   {
     "type": "container-twoColumn",

@@ -15,7 +15,7 @@ import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
  * @Description:
  */
 public class TestView1 extends FrameLayout implements ITangramViewLifeCycle {
-    private TextView textView;
+    public TextView textView;
 
     public TestView1(Context context) {
         super(context);
@@ -32,7 +32,7 @@ public class TestView1 extends FrameLayout implements ITangramViewLifeCycle {
         init();
     }
 
-    private void init() {
+    public void init() {
         inflate(getContext(), R.layout.item, this);
         textView = findViewById(R.id.title);
     }

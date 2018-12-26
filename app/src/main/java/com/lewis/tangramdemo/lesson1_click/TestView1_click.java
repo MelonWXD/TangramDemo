@@ -6,36 +6,30 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.lewis.tangramdemo.R;
+import com.lewis.tangramdemo.lesson1.TestView1;
 import com.tmall.wireless.tangram.structure.BaseCell;
 import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
 
 /**
  * @CreateDate: 2018/12/26 下午3:17
  * @Author: Lewis Weng
- * @Description:
+ * @Description: 通过继承的方式更容易让读者看出来新增的内容
  */
-public class TestView1_click extends FrameLayout implements ITangramViewLifeCycle {
-    private TextView textView;
+public class TestView1_click extends TestView1 {
 
     public TestView1_click(Context context) {
         super(context);
-        init();
     }
 
     public TestView1_click(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
     }
 
     public TestView1_click(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init();
     }
 
-    private void init() {
-        inflate(getContext(), R.layout.item, this);
-        textView = findViewById(R.id.title);
-    }
+
 
     @Override
     public void cellInited(BaseCell cell) {
@@ -44,14 +38,4 @@ public class TestView1_click extends FrameLayout implements ITangramViewLifeCycl
         setOnClickListener(cell);
     }
 
-    @Override
-    public void postBindView(BaseCell cell) {
-        //在绑定数据时，从json中拿具体数据
-        textView.setText((String) cell.optParam("msg"));
-    }
-
-    @Override
-    public void postUnBindView(BaseCell cell) {
-
-    }
 }
