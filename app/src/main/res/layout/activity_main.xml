@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -11,15 +12,17 @@
         android:id="@+id/btn_l1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="简单使用"/>
+        android:text="简单使用" />
+
     <Button
         android:id="@+id/btn_l1_click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="点击支持"/>
+        android:text="点击支持" />
+
     <Button
         android:id="@+id/btn_l1_scroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="滑动支持"/>
+        android:text="滑动支持" />
 </LinearLayout>

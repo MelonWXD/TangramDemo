@@ -16,7 +16,6 @@ public class L1Activity_scroll extends L1Activity_click {
     @Override
     public void initView() {
         super.initView();
-//        getRecyclerView().addOnScrollListener(new L1ScrollListener());
     }
 
     @Override
