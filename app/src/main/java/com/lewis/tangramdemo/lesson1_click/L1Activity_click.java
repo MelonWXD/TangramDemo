@@ -6,6 +6,7 @@ import com.lewis.tangramdemo.lesson1.TestView1;
 import com.lewis.tangramdemo.support.SampleClickSupport;
 import com.tmall.wireless.tangram.TangramBuilder;
 import com.tmall.wireless.tangram.TangramEngine;
+import com.tmall.wireless.tangram.support.SimpleClickSupport;
 
 import static com.lewis.tangramdemo.lesson1.L1Activity.TYPE_TEST_VIEW_1;
 
@@ -28,8 +29,9 @@ public class L1Activity_click extends L1Activity {
     @Override
     public void doEngineRegister(TangramEngine engine) {
         super.doEngineRegister(engine);
-        //engine添加点击支持
+        //engine添加点击支持  下面2个方法没差别
         engine.addSimpleClickSupport(new SampleClickSupport());
+//        engine.register(SimpleClickSupport.class,new SampleClickSupport());
     }
 
     @Override
