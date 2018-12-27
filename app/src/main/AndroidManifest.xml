@@ -23,6 +23,7 @@
         <activity android:name=".lesson1_click.L1Activity_click"/>
         <activity android:name=".lesson1_scroll.L1Activity_scroll"/>
         <activity android:name=".lesson2.L2Activity"/>
+        <activity android:name=".lesson3_exposure.L3Activity"/>
     </application>
 
 </manifest>
