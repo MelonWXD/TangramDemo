@@ -22,6 +22,7 @@
         <activity android:name=".lesson1.L1Activity"/>
         <activity android:name=".lesson1_click.L1Activity_click"/>
         <activity android:name=".lesson1_scroll.L1Activity_scroll"/>
+        <activity android:name=".lesson2.L2Activity"/>
     </application>
 
 </manifest>

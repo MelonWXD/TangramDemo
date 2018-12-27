@@ -8,6 +8,7 @@ import android.view.View;
 import com.lewis.tangramdemo.lesson1.L1Activity;
 import com.lewis.tangramdemo.lesson1_click.L1Activity_click;
 import com.lewis.tangramdemo.lesson1_scroll.L1Activity_scroll;
+import com.lewis.tangramdemo.lesson2.L2Activity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -31,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
             unbinder.unbind();
     }
 
-    @OnClick({R.id.btn_l1, R.id.btn_l1_click, R.id.btn_l1_scroll})
+    @OnClick({R.id.btn_l1, R.id.btn_l1_click, R.id.btn_l1_scroll,
+            R.id.btn_l2})
     public void onButtonClick(View view) {
         switch (view.getId()) {
             case R.id.btn_l1:
@@ -42,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_l1_scroll:
                 startActivity(L1Activity_scroll.class);
+                break;
+            case R.id.btn_l2:
+                startActivity(L2Activity.class);
+                break;
             default:
                 ;
         }

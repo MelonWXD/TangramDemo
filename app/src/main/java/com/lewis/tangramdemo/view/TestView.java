@@ -37,8 +37,9 @@ import com.tmall.wireless.tangram.structure.BaseCell;
 import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
 
 /**
- * Created by villadora on 15/8/24.
- * 通用 model 开发组件
+ * @CreateDate: 2018/12/26 下午8:14
+ * @Author: Lewis Weng
+ * @Description: 采用通用 model，开发自定义 View。
  * 组件开发模式一，避免了反射调用，性能上更优：
  * 实现一个自定义View
  * 实现接口ITangramViewLifeCycle
