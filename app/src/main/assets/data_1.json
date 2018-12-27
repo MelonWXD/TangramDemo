@@ -2,5 +2,32 @@
   {
     "type": "TestView1",
     "msg": "Hello Tangram"
+  },
+  {
+    "type": "container-float",
+    "style": {
+      "align": "bottom_left",
+      "x": 10,
+      "y": 100,
+      "bgColor": "#ffff00",
+      "padding": [40,40,40,40]
+    },
+    "items": [
+      {
+        "type": "TestImage",
+        "action": "xxx",
+        "imgUrl": "https://img.alicdn.com/tps/TB11Y5hPVXXXXbaXpXXXXXXXXXX-186-158.png",
+        "style": {
+          "margin": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "height": 50,
+          "width": 50
+        }
+      }
+    ]
   }
 ]

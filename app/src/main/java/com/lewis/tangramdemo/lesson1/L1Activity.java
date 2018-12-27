@@ -11,11 +11,13 @@ import com.tmall.wireless.tangram.TangramEngine;
  */
 public class L1Activity extends CommonActivity {
     public static final String TYPE_TEST_VIEW_1 = "TestView1";
+    public static final String TYPE_TEST_IMAGE = "TestImage";
 
 
     @Override
     public void doBuilderRegister(TangramBuilder.InnerBuilder builder) {
         builder.registerCell(TYPE_TEST_VIEW_1, TestView1.class);
+        builder.registerCell(TYPE_TEST_IMAGE, TestImageView.class);
 
     }
 
