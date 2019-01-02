@@ -7,7 +7,8 @@ import com.tmall.wireless.tangram.TangramEngine;
 /**
  * @CreateDate: 2018/12/26 下午3:26
  * @Author: Lewis Weng
- * @Description: 后续多数LxActivity都会继承这个类
+ * @Description: 最简单的使用
+ * 后续多数LxActivity都会继承这个类
  */
 public class L1Activity extends CommonActivity {
     public static final String TYPE_TEST_VIEW_1 = "TestView1";
