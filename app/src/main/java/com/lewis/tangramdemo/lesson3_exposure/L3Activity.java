@@ -9,7 +9,7 @@ import com.tmall.wireless.tangram.TangramEngine;
 /**
  * @CreateDate: 2018/12/26 下午8:18
  * @Author: Lewis Weng
- * @Description:
+ * @Description: 曝光处理
  */
 public class L3Activity extends L1Activity {
 

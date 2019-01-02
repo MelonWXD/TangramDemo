@@ -1,0 +1,42 @@
+[
+  {
+    "type": "TestView1",
+    "msg": "往下滑，往下滑啊"
+  },
+  {
+    "type": "container-oneColumn",
+    "style": {
+      "bgColor": "#ff8577"
+    },
+    "items": [
+      {
+        "type": "TestView1_click",
+        "msg": "占"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "位"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "置"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "的"
+      }
+    ]
+  },
+  {
+    "type": "container-threeColumn",
+    "load": "url_to_json_data",
+    "loadType": 1,
+    "items": [
+    ]
+  },
+  {
+    "type": "container-twoColumn",
+    "load": "url_to_json_data",
+    "loadType": -1
+  }
+]

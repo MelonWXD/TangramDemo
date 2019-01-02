@@ -12,28 +12,41 @@
         android:id="@+id/btn_l1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="简单使用" />
 
     <Button
         android:id="@+id/btn_l1_click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:text="点击支持" />
 
     <Button
         android:id="@+id/btn_l1_scroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="滑动支持" />
+
     <Button
         android:id="@+id/btn_l2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="自定义cell" />
 
     <Button
         android:id="@+id/btn_l3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="布局曝光" />
+
+    <Button
+        android:id="@+id/btn_l4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="异步加载" />
 </LinearLayout>
