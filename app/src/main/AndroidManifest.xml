@@ -27,6 +27,7 @@
         <activity android:name=".lesson2.L2Activity" />
         <activity android:name=".lesson3_exposure.L3Activity" />
         <activity android:name=".lesson4_load.L4Activity" />
+        <activity android:name=".lesson5_support_module.L5Activity"/>
     </application>
 
 </manifest>

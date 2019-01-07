@@ -1,0 +1,93 @@
+[
+  {
+    "type": "TestView1",
+    "msg": "往下滑，往下滑啊"
+  },
+  {
+    "type": "container-oneColumn",
+    "style": {
+      "bgColor": "#ff8577",
+      "bgImgUrl": "card_support_need_this_key"
+    },
+    "items": [
+      {
+        "type": "TestView1_click",
+        "msg": "占"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "位(这个deprecated为true，是不会显示滴)",
+        "deprecated": true
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "置"
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "的"
+      }
+    ]
+  },
+  {
+    "type": "container-waterfall",
+    "style": {
+      "margin": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "column": 2,
+      "hGap": "20",
+      "vGap": "20"
+    },
+    "items": [
+      {
+        "type": "TestView1_click",
+        "msg": "占",
+        "style": {
+          "height": 200,
+          "width": 150,
+          "bgColor": "#6f1f12"
+        }
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "位",
+        "style": {
+          "height": 150,
+          "width": 150,
+          "bgColor": "#ff12aa"
+        }
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "置",
+        "style": {
+          "height": 370,
+          "width": 150,
+          "bgColor": "#abc12f"
+        }
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "的",
+        "style": {
+          "height": 250,
+          "width": 150,
+          "bgColor": "#ff1f52"
+        }
+      },
+      {
+        "type": "TestView1_click",
+        "msg": "啊",
+        "style": {
+          "height": 200,
+          "width": 150,
+          "bgColor": "#6f1f12"
+        }
+      }
+    ]
+  }
+]
