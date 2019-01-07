@@ -5,7 +5,9 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.alibaba.android.vlayout.Range;
-import com.lewis.tangramdemo.lesson1.L1Activity;
+import com.lewis.tangramdemo.CommonActivity;
+import com.lewis.tangramdemo.lesson1.TestImageView;
+import com.lewis.tangramdemo.lesson1.TestView1;
 import com.lewis.tangramdemo.lesson1_click.TestView1_click;
 import com.lewis.tangramdemo.utils.WeakHandler;
 import com.tmall.wireless.tangram.TangramBuilder;
@@ -23,6 +25,8 @@ import org.json.JSONObject;
 
 import java.util.List;
 
+import static com.lewis.tangramdemo.lesson1.L1Activity.TYPE_TEST_IMAGE;
+import static com.lewis.tangramdemo.lesson1.L1Activity.TYPE_TEST_VIEW_1;
 import static com.lewis.tangramdemo.lesson1_click.L1Activity_click.TYPE_TEST_VIEW_1_CLICK;
 
 /**
@@ -30,21 +34,21 @@ import static com.lewis.tangramdemo.lesson1_click.L1Activity_click.TYPE_TEST_VIE
  * @Author: Lewis Weng
  * @Description: 异步加载
  */
-public class L4Activity extends L1Activity {
+public class L4Activity extends CommonActivity {
     private static final String TAG = "wxdL4Activity";
     private WeakHandler uiHandler = new WeakHandler();
 
 
     @Override
     public void doBuilderRegister(TangramBuilder.InnerBuilder builder) {
-        super.doBuilderRegister(builder);
+        builder.registerCell(TYPE_TEST_VIEW_1, TestView1.class);
+        builder.registerCell(TYPE_TEST_IMAGE, TestImageView.class);
         builder.registerCell(TYPE_TEST_VIEW_1_CLICK, TestView1_click.class);
 
     }
 
     @Override
     public void doEngineRegister(final TangramEngine engine) {
-        super.doEngineRegister(engine);
         //json中loadType=1的 调用通过这个loader加载
         AsyncLoader asyncLoader = new AsyncLoader() {
             @Override
