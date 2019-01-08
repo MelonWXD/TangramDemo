@@ -16,9 +16,10 @@
         android:id="@+id/tv_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18dp" />
+        android:textSize="12dp" />
 
     <ImageView
+        android:layout_marginTop="5dp"
         android:id="@+id/iv_img2"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -28,6 +29,6 @@
         android:id="@+id/tv_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18dp" />
+        android:textSize="12dp" />
 
 </LinearLayout>

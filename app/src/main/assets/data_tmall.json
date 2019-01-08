@@ -4,12 +4,18 @@
     "id": "header",
     "style": {
       "pageWidth": "80",
-      "pageHeight": "220",
+      "pageHeight": "150",
       "indicatorColor": "#FFFFFF",
       "defaultIndicatorColor": "#6E6E6E",
       "hasIndicator": true,
       "margin": [
         20,
+        0,
+        10,
+        0
+      ],
+      "padding": [
+        10,
         0,
         0,
         0
@@ -18,29 +24,29 @@
     "items": [
       {
         "type": "textImage",
-        "title": "t1",
+        "imgUrl": "http://gtms04.alicdn.com/tps/i4/TB1ivBELFXXXXXOXpXXtz80OVXX-160-160.png",
+        "title": "天猫国际",
+        "title2": "t1",
+        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+      },
+      {
+        "type": "textImage",
+        "title": "聚划算",
         "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
         "title2": "t1",
         "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
       },
       {
         "type": "textImage",
-        "title": "t2",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "t1",
+        "imgUrl": "http://img.alicdn.com/tps/i4/TB16VxHHVXXXXasXFXXtz80OVXX-160-160.png_200x200.jpg",
+        "title": "充值",
+        "title2": "聚划算",
         "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
       },
       {
         "type": "textImage",
-        "title": "t3",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "t1",
-        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
-      },
-      {
-        "type": "textImage",
-        "title": "t2",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
+        "imgUrl": "http://img.alicdn.com/tps/i1/TB1i_o5IXXXXXazXpXXtz80OVXX-160-160.png_200x200.jpg",
+        "title": "积分刮券",
         "title2": "t1",
         "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
       },
@@ -82,7 +88,6 @@
         0,
         10
       ],
-      "bgColor": "#FFB6C1",
       "indicatorImg1": "https://img.alicdn.com/tps/TB16i4qNXXXXXbBXFXXXXXXXXXX-32-4.png",
       "indicatorImg2": "https://img.alicdn.com/tps/TB1XRNFNXXXXXXKXXXXXXXXXXXX-32-4.png",
       "autoScroll": 2000,
