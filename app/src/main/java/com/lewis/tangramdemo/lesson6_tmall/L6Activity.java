@@ -7,10 +7,12 @@ import com.blankj.utilcode.util.ScreenUtils;
 import com.lewis.tangramdemo.CommonActivity;
 import com.lewis.tangramdemo.R;
 import com.lewis.tangramdemo.lesson1.TestImageView;
+import com.lewis.tangramdemo.lesson1_click.TestView1_click;
 import com.lewis.tangramdemo.lesson6_tmall.view.TextImageView;
 import com.tmall.wireless.tangram.TangramBuilder;
 import com.tmall.wireless.tangram.TangramEngine;
 
+import static com.lewis.tangramdemo.lesson1_click.L1Activity_click.TYPE_TEST_VIEW_1_CLICK;
 import static com.lewis.tangramdemo.lesson6_tmall.Constant.TYPE_IMAGEVIEW;
 import static com.lewis.tangramdemo.lesson6_tmall.Constant.TYPE_TEXTIMAGEVIEW;
 
@@ -40,6 +42,7 @@ public class L6Activity extends CommonActivity {
     public void doBuilderRegister(TangramBuilder.InnerBuilder builder) {
         builder.registerCell(TYPE_IMAGEVIEW, TestImageView.class);
         builder.registerCell(TYPE_TEXTIMAGEVIEW, TextImageView.class);
+
 
     }
 

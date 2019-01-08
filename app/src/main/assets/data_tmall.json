@@ -104,5 +104,24 @@
         "imgUrl": "http://gtms04.alicdn.com/tps/i4/TB1xsX8KFXXXXbkXpXXeRTP_XXX-1125-543.jpg"
       }
     ]
+  },
+  {
+    "type": "container-oneColumn",
+    "id":"ad",
+    "style": {
+      "aspectRatio": 7.5,
+      "margin": [
+        10,
+        5,
+        10,
+        5
+      ]
+    },
+    "items": [
+      {
+        "type": "image",
+        "imgUrl": "https:\/\/img.alicdn.com\/tfs\/TB1hItNArrpK1RjSZTEXXcWAVXa-750-100.png"
+      }
+    ]
   }
 ]

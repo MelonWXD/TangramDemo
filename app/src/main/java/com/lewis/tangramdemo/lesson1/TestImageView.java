@@ -29,14 +29,12 @@ public class TestImageView extends AppCompatImageView implements ITangramViewLif
 
     @Override
     public void cellInited(BaseCell cell) {
-        Log.i("wxddd", "cellInited: " + getWidth() + "," + getHeight());
     }
 
     @Override
     public void postBindView(BaseCell cell) {
         //从json中取到url 通过我们设置的工具App中设置的是Glide来加载图片
         ImageUtils.doLoadImageUrl(this, cell.optStringParam("imgUrl"));
-        Log.i("wxddd", "postBindView: " + getWidth() + "," + getHeight());
 
     }
 
