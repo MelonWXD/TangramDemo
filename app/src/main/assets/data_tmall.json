@@ -24,51 +24,44 @@
     "items": [
       {
         "type": "textImage",
-        "imgUrl": "http://gtms04.alicdn.com/tps/i4/TB1ivBELFXXXXXOXpXXtz80OVXX-160-160.png",
         "title": "天猫国际",
-        "title2": "t1",
+        "imgUrl": "http://gtms04.alicdn.com/tps/i4/TB1ivBELFXXXXXOXpXXtz80OVXX-160-160.png",
+        "title2": "聚划算",
         "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
       },
       {
         "type": "textImage",
         "title": "聚划算",
         "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "t1",
-        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+        "title2": "天猫国际",
+        "imgUrl2": "http://gtms04.alicdn.com/tps/i4/TB1ivBELFXXXXXOXpXXtz80OVXX-160-160.png"
       },
       {
         "type": "textImage",
-        "imgUrl": "http://img.alicdn.com/tps/i4/TB16VxHHVXXXXasXFXXtz80OVXX-160-160.png_200x200.jpg",
         "title": "充值",
+        "imgUrl": "http://img.alicdn.com/tps/i4/TB16VxHHVXXXXasXFXXtz80OVXX-160-160.png_200x200.jpg",
         "title2": "聚划算",
         "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
       },
       {
         "type": "textImage",
-        "imgUrl": "http://img.alicdn.com/tps/i1/TB1i_o5IXXXXXazXpXXtz80OVXX-160-160.png_200x200.jpg",
         "title": "积分刮券",
-        "title2": "t1",
+        "imgUrl": "http://img.alicdn.com/tps/i1/TB1i_o5IXXXXXazXpXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "还是划算",
         "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
       },
       {
         "type": "textImage",
-        "title": "t3",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "t1",
-        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+        "title": "充值",
+        "imgUrl": "http://img.alicdn.com/tps/i4/TB16VxHHVXXXXasXFXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "积分",
+        "imgUrl2": "http://img.alicdn.com/tps/i1/TB1i_o5IXXXXXazXpXXtz80OVXX-160-160.png_200x200.jpg"
       },
       {
         "type": "textImage",
-        "title": "t2",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "t1",
-        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
-      },
-      {
-        "type": "textImage",
-        "title": "t3",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "t1",
+        "title": "继续充值",
+        "imgUrl": "http://img.alicdn.com/tps/i4/TB16VxHHVXXXXasXFXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "疯狂划算",
         "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
       }
     ]
