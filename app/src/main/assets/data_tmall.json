@@ -1,0 +1,110 @@
+[
+  {
+    "type": "container-scroll",
+    "id": "header",
+    "style": {
+      "pageWidth": "80",
+      "pageHeight": "220",
+      "indicatorColor": "#FFFFFF",
+      "defaultIndicatorColor": "#6E6E6E",
+      "hasIndicator": true,
+      "margin": [
+        20,
+        0,
+        0,
+        0
+      ]
+    },
+    "items": [
+      {
+        "type": "textImage",
+        "title": "t1",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "t1",
+        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+      },
+      {
+        "type": "textImage",
+        "title": "t2",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "t1",
+        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+      },
+      {
+        "type": "textImage",
+        "title": "t3",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "t1",
+        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+      },
+      {
+        "type": "textImage",
+        "title": "t2",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "t1",
+        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+      },
+      {
+        "type": "textImage",
+        "title": "t3",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "t1",
+        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+      },
+      {
+        "type": "textImage",
+        "title": "t2",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "t1",
+        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+      },
+      {
+        "type": "textImage",
+        "title": "t3",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
+        "title2": "t1",
+        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+      }
+    ]
+  },
+  {
+    "type": "container-banner",
+    "id": "banner",
+    "style": {
+      "indicatorGap": "5",
+      "indicatorMargin": "5",
+      "indicatorGravity": "center",
+      "indicatorHeight": "2",
+      "itemRatio": "2.072",
+      "padding": [
+        0,
+        10,
+        0,
+        10
+      ],
+      "bgColor": "#FFB6C1",
+      "indicatorImg1": "https://img.alicdn.com/tps/TB16i4qNXXXXXbBXFXXXXXXXXXX-32-4.png",
+      "indicatorImg2": "https://img.alicdn.com/tps/TB1XRNFNXXXXXXKXXXXXXXXXXXX-32-4.png",
+      "autoScroll": 2000,
+      "infinite": true
+    },
+    "items": [
+      {
+        "type": "image",
+        "imgUrl": "https://gw.alicdn.com/tps/TB1Q5dLKFXXXXcyXVXXXXXXXXXX-1125-543.jpg"
+      },
+      {
+        "type": "image",
+        "imgUrl": "http://img.alicdn.com/tps/TB1Pl47KFXXXXXjXpXXXXXXXXXX-1125-543.png"
+      },
+      {
+        "type": "image",
+        "imgUrl": "http://gtms01.alicdn.com/tps/i1/TB1YfOXKFXXXXc2XXXXUSjP_XXX-1125-543.png"
+      },
+      {
+        "type": "image",
+        "imgUrl": "http://gtms04.alicdn.com/tps/i4/TB1xsX8KFXXXXbkXpXXeRTP_XXX-1125-543.jpg"
+      }
+    ]
+  }
+]

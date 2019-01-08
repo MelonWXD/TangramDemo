@@ -3,6 +3,7 @@ package com.lewis.tangramdemo.lesson1;
 import android.content.Context;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
+import android.util.Log;
 
 import com.tmall.wireless.tangram.structure.BaseCell;
 import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
@@ -28,13 +29,15 @@ public class TestImageView extends AppCompatImageView implements ITangramViewLif
 
     @Override
     public void cellInited(BaseCell cell) {
-
+        Log.i("wxddd", "cellInited: " + getWidth() + "," + getHeight());
     }
 
     @Override
     public void postBindView(BaseCell cell) {
         //从json中取到url 通过我们设置的工具App中设置的是Glide来加载图片
         ImageUtils.doLoadImageUrl(this, cell.optStringParam("imgUrl"));
+        Log.i("wxddd", "postBindView: " + getWidth() + "," + getHeight());
+
     }
 
     @Override

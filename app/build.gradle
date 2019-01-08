@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.lewis.tangramdemo"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -32,7 +32,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
     // gradle
-    implementation 'com.alibaba.android:tangram:2.0.5@aar'
+    implementation 'com.alibaba.android:tangram:3.1.9.3'
 
     // we added rxjava in latest version, so need compile rxjava
     implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
@@ -53,4 +53,8 @@ dependencies {
         transitive = true
         exclude group: 'com.android.support', module: 'support-v4'
     }
+
+    implementation 'com.blankj:utilcode:1.22.10'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
 }

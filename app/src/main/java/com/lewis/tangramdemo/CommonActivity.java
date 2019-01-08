@@ -24,7 +24,7 @@ public abstract class CommonActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_common);
+        setContentView(getLayoutId());
         recyclerView = findViewById(R.id.rv_main);
 
         initView();
@@ -48,6 +48,10 @@ public abstract class CommonActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+    }
+
+    public int getLayoutId() {
+        return R.layout.activity_common;
     }
 
     public void initView() {

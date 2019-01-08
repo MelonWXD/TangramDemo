@@ -12,6 +12,7 @@ import com.lewis.tangramdemo.lesson2.L2Activity;
 import com.lewis.tangramdemo.lesson3_exposure.L3Activity;
 import com.lewis.tangramdemo.lesson4_load.L4Activity;
 import com.lewis.tangramdemo.lesson5_support_module.L5Activity;
+import com.lewis.tangramdemo.lesson6_tmall.L6Activity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick({R.id.btn_l1, R.id.btn_l1_click, R.id.btn_l1_scroll,
             R.id.btn_l2, R.id.btn_l3, R.id.btn_l4,
-            R.id.btn_l5})
+            R.id.btn_l5, R.id.btn_l6})
     public void onButtonClick(View view) {
         switch (view.getId()) {
             case R.id.btn_l1:
@@ -61,12 +62,15 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_l5:
                 startActivity(L5Activity.class);
                 break;
+            case R.id.btn_l6:
+                startActivity(L6Activity.class);
+                break;
             default:
                 ;
         }
     }
 
-    private void startActivity(Class<? extends CommonActivity> activityClass) {
+    private void startActivity(Class<? extends AppCompatActivity> activityClass) {
         Intent i = new Intent(this, activityClass);
         startActivity(i);
     }
