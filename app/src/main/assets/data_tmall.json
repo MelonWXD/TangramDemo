@@ -24,45 +24,45 @@
     "items": [
       {
         "type": "textImage",
+        "title": "苏宁易购",
+        "imgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB1.w_lHY9YBuNjy0FgXXcxcXXa-158-158.png",
+        "title2": "免费领水果",
+        "imgUrl2": "https:\/\/img.alicdn.com\/tfs\/TB1mFomg9zqK1RjSZFpXXakSXXa-158-158.png"
+      },
+      {
+        "type": "textImage",
+        "title": "天猫超市",
+        "imgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB1peF8HYGYBuNjy0FoXXciBFXa-158-158.png",
+        "title2": "积分兑红包",
+        "imgUrl2": "https:\/\/gw.alicdn.com\/tfs\/TB1CoNxlQvoK1RjSZFwXXciCFXa-158-158.png"
+      },
+      {
+        "type": "textImage",
         "title": "天猫国际",
-        "imgUrl": "http://gtms04.alicdn.com/tps/i4/TB1ivBELFXXXXXOXpXXtz80OVXX-160-160.png",
-        "title2": "聚划算",
-        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+        "imgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB190GhHVOWBuNjy0FiXXXFxVXa-158-158.png",
+        "title2": "粉丝福利社",
+        "imgUrl2": "https:\/\/gw.alicdn.com\/tfs\/TB1gvAVhcfpK1RjSZFOXXa6nFXa-158-158.png"
       },
       {
         "type": "textImage",
         "title": "聚划算",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "天猫国际",
-        "imgUrl2": "http://gtms04.alicdn.com/tps/i4/TB1ivBELFXXXXXOXpXXtz80OVXX-160-160.png"
+        "imgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB1AfzfH4GYBuNjy0FnXXX5lpXa-158-158.png",
+        "title2": "邀请赚红包",
+        "imgUrl2": "https:\/\/gw.alicdn.com\/tfs\/TB1l6cvbMTqK1RjSZPhXXXfOFXa-158-158.png"
       },
       {
         "type": "textImage",
-        "title": "充值",
-        "imgUrl": "http://img.alicdn.com/tps/i4/TB16VxHHVXXXXasXFXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "聚划算",
-        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+        "title": "天猫闪降",
+        "imgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB1tPXvolnTBKNjSZPfXXbf1XXa-210-210.png",
+        "title2": "分类",
+        "imgUrl2": "https:\/\/gw.alicdn.com\/tfs\/TB1bj60nY3nBKNjSZFMXXaUSFXa-158-158.png"
       },
       {
         "type": "textImage",
-        "title": "积分刮券",
-        "imgUrl": "http://img.alicdn.com/tps/i1/TB1i_o5IXXXXXazXpXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "还是划算",
-        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
-      },
-      {
-        "type": "textImage",
-        "title": "充值",
-        "imgUrl": "http://img.alicdn.com/tps/i4/TB16VxHHVXXXXasXFXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "积分",
-        "imgUrl2": "http://img.alicdn.com/tps/i1/TB1i_o5IXXXXXazXpXXtz80OVXX-160-160.png_200x200.jpg"
-      },
-      {
-        "type": "textImage",
-        "title": "继续充值",
-        "imgUrl": "http://img.alicdn.com/tps/i4/TB16VxHHVXXXXasXFXXtz80OVXX-160-160.png_200x200.jpg",
-        "title2": "疯狂划算",
-        "imgUrl2": "http://img.alicdn.com/tps/i3/TB10qtAHVXXXXaiXVXXtz80OVXX-160-160.png_200x200.jpg"
+        "title": "淘票票",
+        "imgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB1kGhVyCzqK1RjSZFHXXb3CpXa-158-158.png",
+        "title2": "大麦",
+        "imgUrl2": "https:\/\/gw.alicdn.com\/tfs\/TB1xr8TyxTpK1RjSZFGXXcHqFXa-158-158.png"
       }
     ]
   },
@@ -120,7 +120,7 @@
     "items": [
       {
         "type": "image",
-        "imgUrl": "https:\/\/img.alicdn.com\/tfs\/TB1hItNArrpK1RjSZTEXXcWAVXa-750-100.png"
+        "imgUrl": "https://gw.alicdn.com//tfs//TB1IzU0AQvoK1RjSZPfXXXPKFXa-750-100.gif"
       }
     ]
   },
