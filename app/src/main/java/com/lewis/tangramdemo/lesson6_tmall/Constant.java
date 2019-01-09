@@ -6,6 +6,8 @@ package com.lewis.tangramdemo.lesson6_tmall;
  * @Description:  type与类的对应表
  */
 public class Constant {
-    public static final String TYPE_IMAGEVIEW = "image";
-    public static final String TYPE_TEXTIMAGEVIEW = "textImage";
+    public static final String TYPE_TEXT = "text";
+    public static final String TYPE_IMAGE = "image";
+    public static final String TYPE_TEXTIMAGE = "textImage";
+    public static final String TYPE_RATIOMAGE = "ratioImage";
 }

@@ -107,7 +107,7 @@
   },
   {
     "type": "container-oneColumn",
-    "id":"ad",
+    "id": "ad",
     "style": {
       "aspectRatio": 7.5,
       "margin": [
@@ -121,6 +121,98 @@
       {
         "type": "image",
         "imgUrl": "https:\/\/img.alicdn.com\/tfs\/TB1hItNArrpK1RjSZTEXXcWAVXa-750-100.png"
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "id": "newUser",
+    "style": {
+      "aspectRatio": "1.32",
+      "bgImgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB17nNgqSzqK1RjSZPcXXbTepXa-750-557.png"
+    },
+    "items": [
+      {
+        "type": "text",
+        "style": {
+          "margin": [
+            10,
+            0,
+            0,
+            10
+          ]
+        },
+        "msg": "新用户专区",
+        "size": 22,
+        "textColor": "#000000",
+        "ratio": "15.0"
+      },
+      {
+        "type": "container-twoColumn",
+        "id": "hongbao",
+        "style": {
+          "aspectRatio": "3.49",
+          "padding": [
+            30,
+            30,
+            10,
+            30
+          ],
+          "hGap": 10
+        },
+        "items": [
+          {
+            "type": "image",
+            "imgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB11D8wqG6qK1RjSZFmXXX0PFXa-283-162.png"
+          },
+          {
+            "type": "image",
+            "imgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB1_BFyqMHqK1RjSZFkXXX.WFXa-283-162.png"
+          }
+        ]
+      },
+      {
+        "type": "container-fourColumn",
+        "id": "newGoods",
+        "style": {
+          "bgColor": "#FFFFFF",
+          "aspectRatio": "3.8",
+          "margin": [
+            10,
+            20,
+            20,
+            20
+          ],
+          "padding": [
+            10,
+            20,
+            10,
+            20
+          ],
+          "hGap": 10
+        },
+        "items": [
+          {
+            "imgUrl": "http:\/\/gju3.alicdn.com\/tps\/i4\/O1CN016EnjeJ1TCy3g6Nq2C_!!0-juitemmedia.jpg",
+            "type": "image",
+            "text": "¥518.00"
+          },
+          {
+            "imgUrl": "http:\/\/gju3.alicdn.com\/tps\/i1\/O1CN01p9g1wY1EUAhLhQQ1C_!!0-juitemmedia.jpg",
+            "type": "image",
+            "text": "¥508.00"
+          },
+          {
+            "imgUrl": "http:\/\/gju3.alicdn.com\/tps\/i1\/O1CN01rkaLGA2AHZVwuOZ7l_!!0-juitemmedia.jpg",
+            "type": "image",
+            "text": "¥158.00"
+          },
+          {
+            "imgUrl": "http:\/\/gju3.alicdn.com\/tps\/i2\/O1CN01i7Rskz1t33UbQUs2N_!!0-juitemmedia.jpg",
+            "type": "image",
+            "text": "¥158.00"
+          }
+        ]
       }
     ]
   }
