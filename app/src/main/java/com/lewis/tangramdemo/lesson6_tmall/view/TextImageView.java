@@ -43,7 +43,7 @@ public class TextImageView extends LinearLayout implements ITangramViewLifeCycle
 
     public TextImageView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        LinearLayout root = (LinearLayout) inflate(getContext(), R.layout.view_text_image, this);
+        LinearLayout root = (LinearLayout) inflate(context, R.layout.view_text_image, this);
         root.setGravity(Gravity.CENTER_HORIZONTAL);
         root.setOrientation(VERTICAL);
         textView = root.findViewById(R.id.tv_text);

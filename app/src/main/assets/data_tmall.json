@@ -215,5 +215,46 @@
         ]
       }
     ]
+  },
+  {
+    "type": "container-twoColumn",
+    "id": "rushBuy&good",
+    "style": {
+      "aspectRatio": "1"
+    },
+    "items": [
+      {
+        "type": "container-twoColumn",
+        "id": "rushBuy",
+        "style": {
+          "aspectRatio": "1.01",
+          "bgImgUrl": "https:\/\/gw.alicdn.com\/tfs\/TB1pg6qwx9YBuNjy0FfXXXIsVXa-518-512.png?avatar=1"
+        },
+        "items": [
+          {
+            "type": "text",
+            "msg": "限时抢购",
+            "ratio": "7.0",
+            "style": {
+              "bgColor": "#ffaaaa"
+            }
+          },
+          {
+            "type": "textTimer",
+            "hasCountDown": true,
+            "countTimes": [
+              "1547103599000",
+              "1547110799000",
+              "1547117999000",
+              "1547125199000"
+            ],
+            "style": {
+              "bgColor": "#aaaaff"
+            },
+            "ratio": "7.0"
+          }
+        ]
+      }
+    ]
   }
 ]

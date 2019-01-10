@@ -11,13 +11,15 @@ import com.lewis.tangramdemo.CommonActivity;
 import com.lewis.tangramdemo.R;
 import com.lewis.tangramdemo.lesson1.TestImageView;
 import com.lewis.tangramdemo.lesson6_tmall.view.TextImageView;
+import com.lewis.tangramdemo.lesson6_tmall.view.TextTimerCell;
 import com.lewis.tangramdemo.lesson6_tmall.view.TextViewCell;
 import com.tmall.wireless.tangram.TangramBuilder;
 import com.tmall.wireless.tangram.TangramEngine;
 
 import static com.lewis.tangramdemo.lesson6_tmall.Constant.TYPE_IMAGE;
 import static com.lewis.tangramdemo.lesson6_tmall.Constant.TYPE_TEXT;
-import static com.lewis.tangramdemo.lesson6_tmall.Constant.TYPE_TEXTIMAGE;
+import static com.lewis.tangramdemo.lesson6_tmall.Constant.TYPE_TEXT_IMAGE;
+import static com.lewis.tangramdemo.lesson6_tmall.Constant.TYPE_TEXT_TIMER;
 
 /**
  * @CreateDate: 2019/1/7 下午4:18
@@ -58,8 +60,9 @@ public class L6Activity extends CommonActivity {
     @Override
     public void doBuilderRegister(TangramBuilder.InnerBuilder builder) {
         builder.registerCell(TYPE_TEXT, TextViewCell.class);
+        builder.registerCell(TYPE_TEXT_TIMER, TextTimerCell.class);
         builder.registerCell(TYPE_IMAGE, TestImageView.class);
-        builder.registerCell(TYPE_TEXTIMAGE, TextImageView.class);
+        builder.registerCell(TYPE_TEXT_IMAGE, TextImageView.class);
 
 
     }

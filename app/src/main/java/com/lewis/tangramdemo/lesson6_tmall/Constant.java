@@ -7,7 +7,8 @@ package com.lewis.tangramdemo.lesson6_tmall;
  */
 public class Constant {
     public static final String TYPE_TEXT = "text";
+    public static final String TYPE_TEXT_TIMER = "textTimer";
     public static final String TYPE_IMAGE = "image";
-    public static final String TYPE_TEXTIMAGE = "textImage";
-    public static final String TYPE_RATIOMAGE = "ratioImage";
+    public static final String TYPE_TEXT_IMAGE = "textImage";
+    public static final String TYPE_RATIO_IMAGE = "ratioImage";
 }

@@ -7,18 +7,27 @@ import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.blankj.utilcode.util.GsonUtils;
 import com.lewis.tangramdemo.R;
 import com.tmall.wireless.tangram.structure.BaseCell;
 import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
+import com.tmall.wireless.tangram.support.TimerSupport;
+
+import org.json.JSONArray;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * @CreateDate: 2019/1/8 下午5:05
  * @Author: Lewis Weng
- * @Description:
+ * @Description: 支持宽高比
  */
 public class TextViewCell extends FrameLayout implements ITangramViewLifeCycle {
-    public TextView textView;
+    public TextView textTv;
     public double ratio = 1.0;//支持宽高比
+
 
     public TextViewCell(Context context) {
         super(context);
@@ -37,7 +46,7 @@ public class TextViewCell extends FrameLayout implements ITangramViewLifeCycle {
 
     public void init() {
         inflate(getContext(), R.layout.cell_text, this);
-        textView = findViewById(R.id.tv);
+        textTv = findViewById(R.id.tv_text);
     }
 
     @Override
@@ -58,14 +67,18 @@ public class TextViewCell extends FrameLayout implements ITangramViewLifeCycle {
     @Override
     public void postBindView(BaseCell cell) {
         //在绑定数据时，从json中拿具体数据
-        textView.setText((String) cell.optParam("msg"));
+        if (cell.optParam("msg") != null)
+            textTv.setText((String) cell.optParam("msg"));
+
         if (cell.optBoolParam("isBold"))
-            textView.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+            textTv.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
         else {
-            textView.setTypeface(Typeface.defaultFromStyle(Typeface.NORMAL));
+            textTv.setTypeface(Typeface.defaultFromStyle(Typeface.NORMAL));
         }
-        textView.setTextSize((Integer) cell.optParam("size"));
-        textView.setTextColor(Color.parseColor((String) cell.optParam("textColor")));
+        if (cell.optParam("size") != null)
+            textTv.setTextSize((Integer) cell.optParam("size"));
+        if (cell.optParam("textColor") != null)
+            textTv.setTextColor(Color.parseColor((String) cell.optParam("textColor")));
 
     }
 
@@ -73,4 +86,5 @@ public class TextViewCell extends FrameLayout implements ITangramViewLifeCycle {
     public void postUnBindView(BaseCell cell) {
 
     }
+
 }

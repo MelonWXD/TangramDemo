@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TangramDemo</string>
+    <string name="countdown_time">%s:%s:%s</string>
 </resources>
