@@ -11,4 +11,6 @@ public class Constant {
     public static final String TYPE_IMAGE = "image";
     public static final String TYPE_TEXT_IMAGE = "textImage";
     public static final String TYPE_RATIO_IMAGE = "ratioImage";
+    public static final String TYPE_TAB_HEADER = "tabHeader";
+    public static final String TYPE_TAB_CONTENT = "tabContent";
 }

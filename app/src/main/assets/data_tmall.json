@@ -145,7 +145,7 @@
         "msg": "新用户专区",
         "size": 22,
         "textColor": "#000000",
-        "ratio": "15.0"
+        "ratio": "13.0"
       },
       {
         "type": "container-twoColumn",
@@ -254,6 +254,72 @@
             "ratio": "7.0"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "tabHeader",
+    "type": "container-sticky",
+    "style": {
+      "enableScroll": true,
+      "bgColor": "#FFFFFF"
+    },
+    "items": [
+      {
+        "type": "tabHeader",
+        "title": [
+          "精选",
+          "服饰鞋靴",
+          "母婴",
+          "美妆",
+          "美食生鲜",
+          "洗护",
+          "爽歪歪"
+        ],
+        "data": [
+          {
+            "text": "精选",
+            "indicatorRatio": "0.6",
+            "ratio": "1.5"
+          },
+          {
+            "text": "服饰鞋靴",
+            "indicatorRatio": "0.7",
+            "ratio": "2.22"
+          },
+          {
+            "text": "母婴",
+            "indicatorRatio": "0.6",
+            "ratio": "1.5"
+          },
+          {
+            "text": "美妆",
+            "indicatorRatio": "0.6",
+            "ratio": "1.5"
+          },
+          {
+            "text": "美食生鲜",
+            "indicatorRatio": "0.7",
+            "ratio": "2.22"
+          },
+          {
+            "text": "洗护",
+            "indicatorRatio": "0.6",
+            "ratio": "1.5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tabContent",
+    "type": "container-oneColumn",
+    "style": {
+      "aspectRatio": "0.5"
+    },
+    "items": [
+      {
+        "type": "tabContent"
       }
     ]
   }
