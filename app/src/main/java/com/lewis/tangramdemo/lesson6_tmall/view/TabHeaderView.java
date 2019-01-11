@@ -8,16 +8,16 @@ import android.widget.FrameLayout;
 
 import com.blankj.utilcode.util.GsonUtils;
 import com.lewis.tangramdemo.R;
-import com.tmall.wireless.tangram.core.service.ServiceManager;
 import com.tmall.wireless.tangram.eventbus.BusSupport;
 import com.tmall.wireless.tangram.eventbus.Event;
+import com.tmall.wireless.tangram.eventbus.EventHandlerWrapper;
 import com.tmall.wireless.tangram.structure.BaseCell;
 import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
-import com.tmall.wireless.tangram.support.TimerSupport;
 
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import static com.lewis.tangramdemo.lesson6_tmall.view.TabContentView.EVENT_SRC_ID_CONTENT;
 
 /**
  * @CreateDate: 2019/1/10 下午12:05
@@ -31,6 +31,7 @@ public class TabHeaderView extends FrameLayout implements ITangramViewLifeCycle,
     private TabLayout tabLayout;
     private ArrayList<String> titleList;
     private BusSupport busSupport;
+    EventHandlerWrapper wrapper;
 
     public TabHeaderView(Context context) {
         this(context, null);
@@ -64,6 +65,8 @@ public class TabHeaderView extends FrameLayout implements ITangramViewLifeCycle,
         titleList = GsonUtils.fromJson(cell.optJsonArrayParam("title").toString(), ArrayList.class);
         if (cell.serviceManager != null) {
             busSupport = cell.serviceManager.getService(BusSupport.class);
+            wrapper = BusSupport.wrapEventHandler(EVENT_TAB_CHANGED, EVENT_SRC_ID_CONTENT, this, "handleEvent");
+            busSupport.register(wrapper);
         }
     }
 
@@ -77,7 +80,16 @@ public class TabHeaderView extends FrameLayout implements ITangramViewLifeCycle,
 
     @Override
     public void postUnBindView(BaseCell cell) {
+        if (busSupport != null)
+            busSupport.unregister(wrapper);
+    }
 
+    public void handleEvent(Event e) {
+        String pos = e.args.get(ARGS_KEY_POS);
+        int p = Integer.parseInt(pos);
+        if (p >= 0 && p < tabLayout.getTabCount())
+            //可以记录pos避免多发一次通信到content
+            tabLayout.getTabAt(p).select();
     }
 
     @Override

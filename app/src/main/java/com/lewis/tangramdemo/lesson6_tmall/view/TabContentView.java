@@ -1,8 +1,9 @@
 package com.lewis.tangramdemo.lesson6_tmall.view;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
@@ -17,7 +18,7 @@ import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 import static com.lewis.tangramdemo.lesson6_tmall.view.TabHeaderView.ARGS_KEY_POS;
 import static com.lewis.tangramdemo.lesson6_tmall.view.TabHeaderView.EVENT_SRC_ID;
@@ -29,6 +30,8 @@ import static com.lewis.tangramdemo.lesson6_tmall.view.TabHeaderView.EVENT_TAB_C
  * @Description:
  */
 public class TabContentView extends FrameLayout implements ITangramViewLifeCycle {
+    public static final String EVENT_SRC_ID_CONTENT = "tab_content";
+
     EventHandlerWrapper wrapper;
     BusSupport busSupport;
     ListView listView;
@@ -36,6 +39,7 @@ public class TabContentView extends FrameLayout implements ITangramViewLifeCycle
     ArrayList<ArrayList<String>> values;
     ArrayAdapter adapter;
     int oldPos = -1;
+    float x, y;
 
     public TabContentView(Context context) {
         this(context, null);
@@ -55,11 +59,41 @@ public class TabContentView extends FrameLayout implements ITangramViewLifeCycle
         init(context);
     }
 
+
+    @SuppressLint("ClickableViewAccessibility")
     private void init(Context context) {
         View root = inflate(context, R.layout.view_tab_content, this);
         listView = root.findViewById(R.id.lv_content);
-        adapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, data);
+        adapter = new ArrayAdapter<String>(context, R.layout.simple_list_item, data);
         listView.setAdapter(adapter);
+        listView.setOnTouchListener(new OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        x = event.getX();
+                        y = event.getY();
+                        return true;  //需要接收到up事件
+                    case MotionEvent.ACTION_MOVE:
+                        return true; //需要接收到up事件
+                    case MotionEvent.ACTION_UP:
+                        if (event.getX() - x > 50)
+                            changTab(oldPos - 1);
+                        else if (x - event.getX() > 50)
+                            changTab(oldPos + 1);
+                        break;
+                    case MotionEvent.ACTION_CANCEL:
+                        break;
+
+                }
+                //因为tangram外层用了recyclerView 所以向上滑动的操作是被rV给吃掉了
+                //所以横向滑动如果Y轴差过大，被rV吃掉，发给contentView的就是ACTION_CANCEL了
+                //需要在rV中对Y轴做一定的距离判断，再下发给contentView
+                return false;
+
+            }
+        });
     }
 
 
@@ -79,6 +113,7 @@ public class TabContentView extends FrameLayout implements ITangramViewLifeCycle
         values.add(new ArrayList<String>(Arrays.asList("位置4", "位置4", "位置4", "位置4", "位置4", "位置4", "位置4", "位置4")));
         values.add(new ArrayList<String>(Arrays.asList("位置5", "位置5", "位置5", "位置5", "位置5", "位置5", "位置5", "位置5")));
         values.add(new ArrayList<String>(Arrays.asList("位置6", "位置6", "位置6", "位置6", "位置6", "位置6", "位置6", "位置6")));
+        values.add(new ArrayList<String>(Arrays.asList("位置7", "位置7", "位置7", "位置7", "位置7", "位置7", "位置7", "位置7")));
 
     }
 
@@ -91,12 +126,21 @@ public class TabContentView extends FrameLayout implements ITangramViewLifeCycle
     }
 
     private void changTab(int newPos) {
-        if (oldPos != newPos && newPos < values.size()) {
+        if (oldPos != newPos && newPos < values.size() && newPos >= 0) {
             oldPos = newPos;
             data.clear();
             data.addAll(values.get(newPos));
             adapter.notifyDataSetChanged();
+            postTabChangedEvent(newPos);
         }
+    }
+
+    private ConcurrentHashMap<String, String> args = new ConcurrentHashMap<>();
+
+    private void postTabChangedEvent(int newPos) {
+        args.put(ARGS_KEY_POS, String.valueOf(newPos));
+        Event e = BusSupport.obtainEvent(EVENT_TAB_CHANGED, EVENT_SRC_ID_CONTENT, args, null);
+        busSupport.post(e);
     }
 
     @Override
